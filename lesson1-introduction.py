@@ -36,7 +36,8 @@ with app.setup(hide_code=True):
         FSet, 
         exercise,
         definition,
-        theorem
+        theorem,
+        checkAnswer
     )
 
 
@@ -96,7 +97,7 @@ def _():
 
     ## Target Audience
 
-    This course is relatively introductory, and appropriate for a high school student even of you haven't studied calculus.  It is also appropriate if you've taken many more math courses, including the full calculus sequence, linear algebra, differential equations, and perhaps a few more.
+    This course is relatively introductory, and appropriate for a high school student even if you haven't studied calculus.  It is also appropriate if you've taken many more math courses, including the full calculus sequence, linear algebra, differential equations, and perhaps a few more.
 
     However, it does assume that the student intends to take advanced and proof-based courses.  The intent of this course is to prepare the student for courses in
 
@@ -199,6 +200,13 @@ def _():
 
 @app.cell
 def _():
+    y = "Text inside quote-marks are called strings."
+    y+" Strings can be joined with +."
+    return
+
+
+@app.cell
+def _():
     1 == 1
     return
 
@@ -217,7 +225,108 @@ def _():
 
 @app.cell
 def _():
+    # This line is a comment -- it is not executed when you run the cell.
+    '''
+    Comments can also be put in "triple-quotes".  
+
+    This allows comments to be multi-line, like this one!
+    '''
+
     2 < 7
+    return
+
+
+@app.function
+def function(x):
+    return x+2
+
+
+@app.cell
+def _():
+    function(2)
+    return
+
+
+@app.cell
+def _():
+    function(4)
+    return
+
+
+@app.cell
+def _():
+    def second_function(x):
+        return x**2
+
+    def third_function(x):
+        return x**0.5
+
+    def fourth_function(y):
+        return y-1
+
+    print(second_function(2))
+    print(second_function(third_function(2)))
+    print(second_function(third_function(fourth_function(2))))
+    return
+
+
+@app.cell
+def _():
+    def absolute_value(number):
+        if number >= 0:
+            return number
+        else:
+            return -number
+
+    print(absolute_value(1))
+    print(absolute_value(-1))
+    print(absolute_value(0))
+    return
+
+
+@app.cell(hide_code=True)
+def _():
+    mo.md(r"""
+    ## Exercises
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _():
+    mo.md(r"""
+    Part of the motivation for doing everything in these interactive notebooks is to give you exercises where you can get immediate feedback.
+
+    Here's a demonstration.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _():
+    exercise(r""" 
+    ### Exercise
+
+    Find the value of 2-5.  Store your answer in the variable `answer` below.
+    """)
+    return
+
+
+@app.cell
+def _():
+    answer = None
+    return (answer,)
+
+
+@app.cell(hide_code=True)
+def _(answer):
+    checkAnswer(answer,-3)
+    return
+
+
+@app.cell(hide_code=True)
+def _():
+    exercise(r"End of exercise.")
     return
 
 

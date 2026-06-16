@@ -314,7 +314,9 @@ def _():
 
 @app.cell
 def _():
+    # Replace the value None with the correct value below.
     answer = None
+    # If you assign the correct value and run the cell, the cell below will indicate a correct answer.
     return (answer,)
 
 

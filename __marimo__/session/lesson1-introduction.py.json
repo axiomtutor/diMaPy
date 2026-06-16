@@ -1,0 +1,283 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.9",
+    "script_metadata_hash": "855750f160adbd56d875184401e4c4be"
+  },
+  "cells": [
+    {
+      "id": "setup",
+      "code_hash": "6702efd80cdb3cd45e6c883d8e155d9b",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "No module named 'pytest'",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;/tmp/marimo_102020/__marimo__cell_setup_.py&quot;</span>, line <span class=\"m\">2</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"kn\">import</span><span class=\"w\"> </span><span class=\"nn\">pytest</span>\n<span class=\"gr\">ModuleNotFoundError</span>: <span class=\"n\">No module named &#39;pytest&#39;</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "a5d1056f8450c5b55adb6a8d57f421eb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"introduction\">Introduction</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "025cddb906980f3fb4bf79487605b8f7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Welcome to <em>Mathematical Reasoning with Python</em>!</span>\n<span class=\"paragraph\">This is a sequence of notebooks that teaches a full course in mathematical reasoning.  The focus is on math, but we use Python code as a teaching resource.</span>\n<h2 id=\"what-is-mathematical-reasoning\">What Is Mathematical Reasoning?</h2>\n<span class=\"paragraph\">The content strongly overlaps with discrete mathematics.  However, the goal is to prepare the student to take further proof-based mathematics courses.</span>\n<span class=\"paragraph\">This course therefore has two interwoven components:  Domain knowledge, and mathematical techniques.</span>\n<span class=\"paragraph\">For domain knowledge, you will learn</span>\n<ul>\n<li>Sets and formal logic.</li>\n<li>Number theory.</li>\n<li>Relations.</li>\n<li>Functions.</li>\n<li>Combinatorics.</li>\n<li>Recursion.</li>\n<li>Matrices.</li>\n<li>Graphs.</li>\n<li>Algorithms.</li>\n<li>Rational, real, and complex numbers.</li>\n</ul>\n<span class=\"paragraph\">But besides learning substantial topics in mathematics, you'll also just learn how to reason about mathematics.  That includes</span>\n<ul>\n<li>Direct proof.</li>\n<li>Indirect proof.</li>\n<li>Proof by cases.</li>\n<li>Proof by contradiction.</li>\n<li>Counterexamples.</li>\n<li>Diagramatic reasoning.</li>\n<li>Induction.</li>\n<li>The pigeonhole principle.</li>\n<li>Proof of correctness.</li>\n</ul>\n<span class=\"paragraph\">(I may need to update this list as I develop the course.)</span>\n<h2 id=\"prerequisites\">Prerequisites</h2>\n<span class=\"paragraph\">The only prerequisites are high school algebra and geometry.</span>\n<span class=\"paragraph\">No programming knowledge is assumed!</span>\n<h2 id=\"target-audience\">Target Audience</h2>\n<span class=\"paragraph\">This course is relatively introductory, and appropriate for a high school student even of you haven't studied calculus.  It is also appropriate if you've taken many more math courses, including the full calculus sequence, linear algebra, differential equations, and perhaps a few more.</span>\n<span class=\"paragraph\">However, it does assume that the student intends to take advanced and proof-based courses.  The intent of this course is to prepare the student for courses in</span>\n<ul>\n<li>Real analysis</li>\n<li>Abstract algebra</li>\n<li>Combinatorics</li>\n<li>Topology</li>\n<li>Mathematical logic</li>\n<li>Theory of computation</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "e43c3e2b0f90f6d254937a121119a110",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"programming\">Programming</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "fd0643a2bc193efe31602fee4325ea3d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Programming is not our focus, but it is a fun way to break up the long passages of text with interactive exercises and explorations!</span>\n<span class=\"paragraph\">It'll be good if you start warming up to code cells right now.  Below I've made a code cell for you, which contains a very simple line of code.</span>\n<span class=\"paragraph\">Run the cell by hovering your mouse over it, and then finding the \"play\" button.  Alternately, you can click into the cell and type <code>Shift+Enter</code> or <code>Apple+Enter</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "c22edbd0ac0f827509d95355a6bbb767",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>3</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "ba2e06d3155d1fa859f8debd4b277c4d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Just to get you comfortable with editing and running code, click into the cell above, and edit the code.  I recommend trying to multiply numbers.</span>\n<span class=\"paragraph\">Below I've just got a BUNCH of cells of code for you to run.  They code is all short and demonstrates relatively simple behavior.  Rather than bore you with long text, I'll leave the cells as puzzles.  Why do they behave the way they do?</span>\n<span class=\"paragraph\">Feel free to tinker and toy with them, to see modifications of their behavior.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "975ca8804565c1a569450d61090b2743",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>0.5</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "2260380a88f9b8759c0ccb1230f1498e",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "division by zero",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;/tmp/marimo_102020/__marimo__cell_SFPL_.py&quot;</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"mi\">1</span><span class=\"o\">/</span><span class=\"mi\">0</span>\n<span class=\"w\">    </span><span class=\"pm\">~^~</span>\n<span class=\"gr\">ZeroDivisionError</span>: <span class=\"n\">division by zero</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "1297466377ffdf1ccf1ad4995f984f78",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;Hello world!&#x27;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "f94b6f7fd8063e11eea5ca53a9b02c56",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>27</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "9eddc3214655873164c49eff6b54f109",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>1</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "f1e46f328e6decd56c64dd5e761dc2b7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[1, 2, 3]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "e655a8fcce66e34417a0c0a4cc7cc080",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;llo &#x27;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "63698e67f40933e45ce137c439295ef7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[2, 3, 4]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "006d488fdd7b5fad55fb9b1248fe90ae",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>True</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "02807cc5d5fb5730ef6b41ba134456d1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>False</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "57bcbca214af74d7c1c86d43ba38ac0a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>False</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "6b3b686f5fab514f7aeba7e326a0f51e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>True</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

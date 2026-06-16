@@ -1,4 +1,8 @@
 # /// script
+# requires-python = ">=3.13"
+# dependencies = [
+#     "marimo>=0.23.9",
+# ]
 # [tool.marimo.runtime]
 # auto_instantiate = false
 # ///

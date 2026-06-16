@@ -1,7 +1,10 @@
 # /// script
 # requires-python = ">=3.13"
 # dependencies = [
+#     "ipython==9.14.1",
 #     "marimo>=0.23.9",
+#     "pytest==9.1.0",
+#     "sympy==1.14.0",
 # ]
 # [tool.marimo.runtime]
 # auto_instantiate = false

@@ -1,3 +1,3 @@
-# Welcome to Discrete Math with Python! 
+# Welcome to Mathematical Reasoning with Python! 
 
-This is the git repo for the course in discrete math using Python as a teaching tool.  
+This is the git repo for the course in mathematical reasoning, using Python as a teaching tool.  
